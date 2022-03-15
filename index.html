@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Karla&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main id="main">
+      <h1 id="title">Esra vs. Meltem</h1>
+      <p id="description">
+        It is really a struggle for me to decide which one is cuter. Help me
+        out!
+      </p>
+      <form id="survey-form">
+        <label for="name" id="name-label">
+          name:
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name here."
+            required
+          />
+        </label>
+        <label for="email" id="email-label">
+          e-mail:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your e-mail here."
+            required
+          />
+        </label>
+        <label for="number" id="number-label" placeholder="How old are you?"
+          >age:
+          <input
+            type="number"
+            id="number"
+            min="15"
+            max="40"
+            placeholder="How old are you?"
+          />
+        </label>
+        <figure>
+          <img
+            id="img1"
+            src="https://keepface.com/uploads/influencer/influencer_13060/channels/5c6f42d506736.jpg"
+            alt="esra"
+          />
+          <img
+            id="img2"
+            src="https://pbs.twimg.com/profile_images/1419775699154612231/ca7uruoG_400x400.jpg"
+            alt="meltem"
+          />
+          <div class="frame" id="esro">
+            <label for="radio-btn" class="radio-btn">Esra Kochan</label>
+            <input type="radio" name="radio-btn" value="esra" id="radio" />
+          </div>
+          <div class="frame">
+            <input type="radio" name="radio-btn" value="meltem" id="radio" />
+            <label for="radio-btn">Meltem Akchol</label>
+          </div>
+        </figure>
+        <label for="dropdown" id="dropdown-label"
+          >Are you sure? Your last chance!
+        </label>
+        <select name="dropdown" id="dropdown">
+          <option value="meltem">Meltem Akchol</option>
+          <option value="esra">Esra Kochan</option>
+          <option value="both">OK... both</option>
+          <option value="non">I'm gay</option>
+        </select>
+        <textarea placeholder="Any comments? Share with us!"></textarea>
+        <button id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

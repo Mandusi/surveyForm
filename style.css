@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: url(https://cutewallpaper.org/21/dark-seamless-background/Technology-seamless-vector-dark-pattern-Seamless-dark-gray-.jpg);
+  background-size: 50%;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  color: lemonchiffon;
+  font-size: 20px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#survey-form {
+  background-color: #00000080;
+  width: 80%;
+  max-width: 600px;
+  min-width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  box-shadow: #000000af 15px 15px 30px;
+  animation-name: rot;
+  animation-duration: 1s;
+  margin: auto;
+}
+
+label {
+  padding-bottom: 0.4em;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  color: cornsilk;
+  border-radius: 15px;
+  padding: 3px 10px 3px 10px;
+  margin: 0.4em 0;
+  border-style: inherit;
+  background-color: rgba(255, 255, 255, 0.247);
+}
+
+.frame {
+  display: flex;
+  flex-direction: row;
+}
+
+#esro {
+  justify-content: right;
+}
+
+#title {
+  color: lemonchiffon;
+  font-size: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#description {
+  margin: 1rem;
+  padding-left: 1em;
+  text-align: center;
+}
+
+.radio-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+figure {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 49% 49%;
+  min-height: 300px;
+  column-gap: 2%;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: relative;
+}
+
+@keyframes rot {
+  0% {
+    transform: translateY(400px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#dropdown-label {
+  margin-top: 1em;
+}
+
+textarea {
+  background-color: rgba(105, 105, 105, 0.5);
+  color: antiquewhite;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+}
+
+#submit {
+  background-color: rgb(9, 255, 1);
+  color: black;
+  font-family: 'Karla';
+  font-weight: 600;
+  font-size: 1rem;
+  border-style: none;
+  padding: 0.5em;
+  margin: 1em 0;
+}
+
+#submit:hover {
+  animation: rgb 2s linear infinite;
+}
+
+@keyframes rgb {
+  0% {
+    background-color: red;
+  }
+  33% {
+    background-color: blue;
+  }
+  66% {
+    background-color: greenyellow;
+  }
+}
